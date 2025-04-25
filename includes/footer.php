@@ -5,7 +5,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p class="footer-text">&copy; <?= date('Y') ?> TiendaApp - Sistema de Venta de Artículos</p>
+                <p class="footer-text">&copy; <?= date('Y') ?> TUSOP - Sistema de Venta de Artículos</p>
                 <div>
                     <a href="#" class="btn btn-primary">
                         <i class="fas fa-arrow-up"></i> Volver arriba

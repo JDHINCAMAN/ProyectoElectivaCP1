@@ -15,38 +15,38 @@ if (session_status() == PHP_SESSION_NONE) {
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Estilos CSS -->
-    <link rel="stylesheet" href="/tienda/assets/css/styles.css">
+    <link rel="stylesheet" href="/ProyectoElectivaCP1/assets/css/styles.css">
 </head>
 <body>
     <!-- Navbar -->
     <nav class="navbar">
         <div class="container">
-            <a href="/tienda/index.php" class="navbar-brand">
-                <i class="fas fa-store mr-2"></i> TiendaApp
+            <a href="/ProyectoElectivaCP1/index.php" class="navbar-brand">
+                <i class="fas fa-store mr-2"></i> TUSOP
             </a>
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a href="/tienda/index.php" class="nav-link">
+                    <a href="/ProyectoElectivaCP1/index.php" class="nav-link">
                         <i class="fas fa-home"></i> Inicio
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/tienda/controllers/articulos.php" class="nav-link">
+                    <a href="/ProyectoElectivaCP1/controllers/articulos.php" class="nav-link">
                         <i class="fas fa-box"></i> Artículos
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/tienda/controllers/categorias.php" class="nav-link">
+                    <a href="/ProyectoElectivaCP1/controllers/categorias.php" class="nav-link">
                         <i class="fas fa-tags"></i> Categorías
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/tienda/controllers/ventas.php" class="nav-link">
+                    <a href="/ProyectoElectivaCP1/controllers/ventas.php" class="nav-link">
                         <i class="fas fa-shopping-cart"></i> Ventas
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="/tienda/views/carrito.php" class="nav-link">
+                    <a href="/ProyectoElectivaCP1/views/carrito.php" class="nav-link">
                         <i class="fas fa-shopping-basket"></i> Carrito
                         <span class="badge badge-danger cart-counter" style="display:none;">0</span>
                     </a>

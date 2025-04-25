@@ -34,10 +34,10 @@ include 'includes/header.php';
         <h1 class="hero-title">Sistema de Venta de Artículos</h1>
         <p class="hero-text">Gestiona tus productos y ventas de manera eficiente</p>
         <div class="hero-buttons">
-            <a href="controllers/articulos.php" class="btn btn-primary btn-lg">
+            <a href="/ProyectoElectivaCP1/controllers/articulos.php" class="btn btn-primary btn-lg">
                 <i class="fas fa-box"></i> Ver Artículos
             </a>
-            <a href="controllers/ventas.php" class="btn btn-secondary btn-lg">
+            <a href="/ProyectoElectivaCP1/controllers/ventas.php" class="btn btn-secondary btn-lg">
                 <i class="fas fa-shopping-cart"></i> Gestionar Ventas
             </a>
         </div>
@@ -48,7 +48,7 @@ include 'includes/header.php';
 <section class="section">
     <div class="section-header">
         <h2><i class="fas fa-star"></i> Productos Destacados</h2>
-        <a href="controllers/articulos.php" class="btn btn-primary">Ver Todos</a>
+        <a href="/ProyectoElectivaCP1/controllers/articulos.php" class="btn btn-primary">Ver Todos</a>
     </div>
     
     <?php if($result->num_rows > 0): ?>
@@ -70,7 +70,7 @@ include 'includes/header.php';
                         </div>
                     </div>
                     <div class="product-footer">
-                        <a href="controllers/articulos.php?action=view&id=<?= $articulo['id'] ?>" class="btn btn-sm btn-secondary">
+                        <a href="/ProyectoElectivaCP1/controllers/articulos.php?action=view&id=<?= $articulo['id'] ?>" class="btn btn-sm btn-secondary">
                             <i class="fas fa-eye"></i> Ver Detalles
                         </a>
                         <button class="btn btn-sm btn-primary" onclick="addToCart(<?= $articulo['id'] ?>, '<?= htmlspecialchars($articulo['nombre'], ENT_QUOTES) ?>', <?= $articulo['precio'] ?>)">
@@ -84,7 +84,7 @@ include 'includes/header.php';
         <div class="alert alert-info text-center">
             <i class="fas fa-info-circle fa-2x mb-3"></i>
             <p>No hay productos disponibles actualmente.</p>
-            <a href="controllers/articulos.php?action=create_form" class="btn btn-primary mt-2">Crear el primer artículo</a>
+            <a href="/ProyectoElectivaCP1/controllers/articulos.php?action=create_form" class="btn btn-primary mt-2">Crear el primer artículo</a>
         </div>
     <?php endif; ?>
 </section>
@@ -93,7 +93,7 @@ include 'includes/header.php';
 <section class="section bg-light">
     <div class="section-header">
         <h2><i class="fas fa-tags"></i> Categorías</h2>
-        <a href="controllers/categorias.php" class="btn btn-primary">Ver Todas</a>
+        <a href="/ProyectoElectivaCP1/controllers/categorias.php" class="btn btn-primary">Ver Todas</a>
     </div>
     
     <?php if($categorias_result->num_rows > 0): ?>
@@ -110,7 +110,7 @@ include 'includes/header.php';
                         </div>
                     </div>
                     <div class="category-footer">
-                        <a href="controllers/articulos.php?action=search&categoria_id=<?= $categoria['id'] ?>" class="btn btn-sm btn-primary">
+                        <a href="/ProyectoElectivaCP1/controllers/articulos.php?action=search&categoria_id=<?= $categoria['id'] ?>" class="btn btn-sm btn-primary">
                             <i class="fas fa-search"></i> Ver Artículos
                         </a>
                     </div>
@@ -121,7 +121,7 @@ include 'includes/header.php';
         <div class="alert alert-info text-center">
             <i class="fas fa-info-circle fa-2x mb-3"></i>
             <p>No hay categorías disponibles actualmente.</p>
-            <a href="controllers/categorias.php?action=create_form" class="btn btn-primary mt-2">Crear la primera categoría</a>
+            <a href="/ProyectoElectivaCP1/controllers/categorias.php?action=create_form" class="btn btn-primary mt-2">Crear la primera categoría</a>
         </div>
     <?php endif; ?>
 </section>
